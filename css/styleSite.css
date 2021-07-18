@@ -1,0 +1,157 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.section-container{
+    height: 100vh;
+    width: 100%; 
+    display: grid;
+    justify-content: center;
+    color: white;   
+}
+
+.background-secion{    
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+
+.section-color{
+    background-color: black;
+}
+
+.section-one{
+    background-image: url('../assets/background/iphone-bg2.png');    
+}
+
+.site-header{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #3a3838;
+    color: #ecdad5;    
+}
+
+.site-header-p:hover{
+    cursor: pointer;
+}
+
+.logo-contaier{
+    justify-content: flex-end;
+}
+
+.logo-img{
+    margin-top: 20px;
+    margin-left: 20px;
+    
+}
+
+.middle{
+    align-self: center;   
+}
+
+/* Form */
+.card-container{
+    align-items: flex-end;
+    display: flex;
+    /* background: black; */
+    border-radius: 25px;
+    padding: 10px;
+    max-width: 450px;    
+    justify-content: end;
+}
+
+form{    
+    display: grid;
+}
+
+.form-header{
+    margin-bottom: 10px;
+    color: #EABCAF;
+}
+
+input{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+    border-color: #EABCAF;
+    text-align: center;
+    border-radius: 12px;
+    background:black;
+    color: #EABCAF;
+    font-weight: 500;
+}
+
+.form-register{
+    font-weight: 600;
+    font-size: large;
+}
+
+
+/* Footer */
+footer{
+    height: 50px;
+    padding: 25px;
+    background-color:	#152742;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-image-gama{
+    padding-left: 150px;
+    padding-right:  50px;
+}
+
+.footer-image-vtex{
+    padding-left: 50px;
+    padding-right: 150px;
+}
+
+.footer-p{
+    justify-content:  center;
+    color: white;
+}
+
+/* Apple */
+.container {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+  }
+
+  #hide {
+      /*
+    -moz-animation: cssAnimation 0s ease-in 2s forwards;
+    /* Firefox */
+    /*-webkit-animation: cssAnimation 0s ease-in 2s forwards;
+    /* Safari and Chrome */
+    /*-o-animation: cssAnimation 0s ease-in 2s forwards;
+    Opera
+    */
+
+    animation: cssAnimation 2s ease-in 2s forwards;
+
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@keyframes cssAnimation {
+    to {
+        opacity: 0;
+        visibility: visible; 
+    }
+}
+@-webkit-keyframes cssAnimation {
+    to {               
+        opacity: 1;
+        visibility: hidden;        
+    }
+}
